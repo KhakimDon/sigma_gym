@@ -1,0 +1,392 @@
+@import url("./fonts/stylesheet.css");
+@import url("./adaptive.css");
+
+.second_section {
+  height: 183px;
+  width: 90%;
+  margin: 150px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.second_section_block {
+  flex-grow: 1;
+  max-width: 414px;
+}
+
+.second_section_block_top {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.second_section_block_top span {
+  color: white;
+  font-family: "Gilroy";
+  font-weight: 1000;
+  font-size: 55px;
+  line-height: 55px;
+  letter-spacing: 2px;
+}
+.second_section_block_top p {
+  color: rgba(255, 255, 255, 0.582);
+  font-family: "Gilroy";
+  font-weight: 400;
+  margin-top: 5px;
+  font-size: 23px;
+}
+
+.second_section_block_top_svg {
+  height: 97px;
+  width: 97px;
+  padding: 20px;
+  border: 1px solid white;
+}
+.second_section_block_p {
+  color: rgb(255, 255, 255);
+  font-family: "Gilroy";
+  font-weight: 400;
+  margin-top: 10px;
+  line-height: 30px;
+  font-size: 25px;
+}
+.second_section_block_top_svg svg {
+  fill: white;
+  height: 100%;
+  width: 100%;
+}
+
+.three_screen {
+  height: 900px;
+  max-width: 90%;
+  margin: 150px auto;
+  display: flex;
+  gap: 60px;
+}
+
+.three_screen__left {
+  width: 1000px;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.three_screen__left div {
+  display: flex;
+  overflow: hidden;
+  margin-top: 5px;
+  gap: 5px;
+}
+.three_screen__left div img {
+  width: 33%;
+  object-fit: cover;
+}
+
+.three_screen__left_docor {
+  height: 800px;
+  width: 800px;
+  left: 30%;
+  z-index: -1;
+  top: 50%;
+  filter: blur(100px);
+  transform: translateY(-50%);
+  border-radius: 100%;
+  background: #af1416;
+  position: absolute;
+}
+
+.three_screen__right {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-left: 160px;
+}
+
+.three_screen__right span {
+  font-size: 170px;
+  font-family: "Gilroy";
+  font-weight: 1000;
+  transform: rotate(-90deg);
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  color: transparent;
+  position: absolute;
+  left: -60%;
+  bottom: 36%;
+}
+
+.three_screen__right img {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.three_screen__right p {
+  width: 324px;
+  font-family: "Gilroy";
+  color: white;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.four_screen {
+  min-height: 100vh;
+  background: linear-gradient(#af1416, #490809);
+  padding-top: 207px;
+  padding-bottom: 161px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.four_screen h2 {
+  font-size: 140px;
+  font-family: "Gilroy";
+  color: white;
+  font-weight: 1000;
+  text-align: center;
+  line-height: 120px;
+  margin-bottom: 40px;
+}
+
+.four_screen p {
+  font-size: 30px;
+  font-family: "Gilroy";
+  color: rgba(255, 255, 255, 0.623);
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 1200px;
+}
+
+.four_screen_wrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.four_screen_wrapper dialog div {
+  background: #121011;
+}
+
+.four_screen_wrapper dialog div h3 {
+  color: #a10d10;
+  font-size: 24px;
+  font-weight: 1000;
+  font-family: "Gilroy";
+  text-align: left;
+}
+.four_screen_wrapper dialog div p {
+  color: white;
+  font-family: "Gilroy";
+  font-size: 20px;
+  margin-bottom: 0px !important;
+  text-align: left;
+}
+.four_screen_wrapper dialog div button {
+  font-family: "Gilroy";
+  font-weight: 600;
+}
+
+.four_screen_wrapper dialog {
+    background: rgba(0, 0, 0, 0.675);
+}
+
+.four_screen_wrapper_open {
+  border-radius: 0px;
+  font-size: 40px;
+  font-family: "Gilroy";
+  font-weight: 1000;
+  color: black;
+  padding: 10px 30px;
+  background: white;
+}
+
+
+
+
+.sigmagymdecor{
+    font-family: "Gilroy";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-170%);
+    top: 50%;
+    font-weight: 1000;
+    color: transparent;
+    font-size: 120px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+}
+
+.sigmagymdecor:nth-child(2){
+    transform: translateX(-50%) translateY(-110%);
+}
+.sigmagymdecor:nth-child(3){
+    transform: translateX(-50%) translateY(-50%);
+}
+.sigmagymdecor:nth-child(4){
+    transform: translateX(-50%) translateY(10%);
+}
+.sigmagymdecor:nth-child(5){
+    transform: translateX(-50%) translateY(70%);
+}
+
+
+
+.five_screen{
+    height: 100vh;
+    background-image: url('./fivethscreen.png');
+    background-size: cover;
+    background-position: center center;
+    padding: 120px;
+    display: flex;
+    gap: 10px;
+}
+
+.five_screen_item{
+    height: 100%;
+    width: 50%;
+}
+
+.five_screen_item h3{
+    font-size: 116px;
+    font-family: "Gilroy";
+    font-weight: 1000;
+    color: #FF383E;
+    line-height: 110px;
+}
+
+.five_screen_item h4 {
+    font-family: "Gilroy";
+    font-weight: 1000;
+    color: #FF383E;
+    max-width: 380px;
+    line-height: 43px;
+    font-size: 50px;
+}
+
+
+.five_screen_item2{
+    display: flex;flex-direction: column;
+    justify-content: space-between;
+}
+
+.five_screen_item2 div {
+    display: flex;
+}
+
+.five_screen_item2 div p {
+    font-family: "Gilroy";
+    max-width: 510px;
+    color: white;
+}
+
+
+
+.six_screen{
+    height: 100vh;
+    display: flex;
+    background-image: url('./isc_screen.png');
+    background-size: 55%;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.six_screen_item {
+    width: 50%;
+    height: 100%;
+    background: #A91416;
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+    padding: 150px 0px 0px 120px;
+}
+
+.six_screen_item h3{
+    color: white;
+    font-family: "Gilroy";
+    font-weight: 1000;
+    font-size: 70px;
+    max-width: 600px;
+    line-height: 70px;
+    margin-bottom: 60px;
+}
+
+.six_screen_item p{
+    color: white;
+    font-family: "Gilroy";
+    font-weight: 400;
+    font-size: 35px;
+    max-width: 600px;
+    line-height: 35px;
+    margin-bottom: 80px;
+}
+
+.six_screen_item button{
+    color: white;
+    font-family: "Gilroy";
+    font-weight: 1000;
+    font-size: 40px;
+    background: black;
+    border: 1px solid white;
+    width: 350px;
+    height: 90px;
+}
+
+
+
+footer{
+    height: max-content !important;
+    background-image: url('./footer.png');
+    background-size: cover;
+    background-position: center center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 120px;
+}
+
+footer h3{
+    color: white;
+    font-family: "Gilroy";
+    font-weight: 1000;
+    font-size: 95px;
+    line-height: 95px;
+    margin-bottom: 30px;
+}
+
+footer p {
+    color: white;
+    font-family: "Gilroy";
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 40px;
+    margin-top: 76px;
+}
+footer a {
+    color: white;
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 30px;
+    margin-top: 76px;
+
+}
+
+
+
+.second-sreen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.second-sreen-item {
+  height: 100%;
+  max-width: 414px;
+  background: red;
+  width: 100%;
+}
+
