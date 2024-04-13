@@ -9,51 +9,52 @@ import './style.css'
       <div class="flex cont  w-[100%] mx-auto justify-between items-center">
         <img class="h-[80%] logo" src="./assets/sigma.svg" alt="">
         <div class="flex gap-[50px] nav">
-          <a class="text-white font-[Gilroy] font-[400] text-[25px]" href="#">Lorem</a>
-          <a class="text-white font-[Gilroy] font-[400] text-[25px]" href="#">Lorem</a>
-          <a class="text-white font-[Gilroy] font-[400] text-[25px]" href="#">Lorem</a>
-          <a class="text-white font-[Gilroy] font-[400] text-[25px]" href="#">Lorem</a>
-          <a class="text-white font-[Gilroy] font-[400] text-[25px]" href="#">Lorem</a>
+          <a class="text-white font-[Gilroy] font-[400] text-[25px]" href="#whowe">Кто мы ?</a>
+          <a class="text-white font-[Gilroy] font-[400] text-[25px]" href="#advantages"> Преимущества</a>
+          <a class="text-white font-[Gilroy] font-[400] text-[25px]" href="#contact">Контакты</a>
         </div>
         <div class="btn-wrp flex gap-[35px]">
-          <button
-            class="header-btn-call font-[Gilroy] text-white font-[600] text-[22px] px-[40px] py-[10px]">Позвонить</button>
-          <button
-            class="header-btn-sign font-[Gilroy] text-white font-[600] text-[22px] px-[40px] py-[10px]">Записаться</button>
+          <a href="#contact"> <button
+              class="header-btn-call font-[Gilroy] text-white font-[600] text-[22px] px-[40px] py-[10px]">Позвонить</button></a>
+          <a href="#sign"><button
+              class="header-btn-sign font-[Gilroy] text-white font-[600] text-[22px] px-[40px] py-[10px]">Записаться</button></a>
         </div>
       </div>
     </header>
 
     <main>
+
       <section class="h-[100vh] font-[Gilroy] relative one-screen">
         <div class="one-screen-decor"></div>
         <div class="cont cont-wrp-one h-[100%] one-screen-cont mx-auto flex items-center">
           <div class="w-[50%] one-screen-left">
             <span class="flex one-screen-title text-[25px] items-center font-[600] text-[#AF1416]">
-              <div class="h-[17px] mr-[10px] w-[17px] bg-[#AF1416] rounded-[50%]"></div> мы находимся около твоего дома
-              :)
+              <div class="h-[17px] mr-[10px] w-[17px] bg-[#AF1416] rounded-[50%]"></div> Поднимай железо с SigmaGym
             </span>
-            <h1 class="text-[54px] my-[10px] font-[1000] leading-[50px] text-white">Встречают по одежке, а провожают по
-              весу на штанге.</h1>
-            <p class="text-[30px] mt-[20px] one-screen-paragraf text-white max-w-[550px] leading-[30px]">А не пойти ли
-              мне на тренировку?
-              Подумал я и не пошел.</p>
+            <h1 class="text-[54px] my-[10px] font-[1000] leading-[50px] text-white">Вступай в SigmaGym: стань лучшей
+              версией себя</h1>
+            <p class="text-[25px] mt-[20px] one-screen-paragraf text-white max-w-[550px] leading-[30px]">Здесь нет места
+              для слабаков. SigmaGym — это место, где ты сможешь добиться своих целей, перейдя через себя.</p>
             <div class="mt-[38px] flex nums-block gap-[60px]">
               <div class="w-[300px] nums h-[100%]">
-                <span class="text-[52px] text-white  font-[500]">4.000+</span>
-                <p class="text-[22px] mb-[25px] text-white font-[400]">Бойцов мы подготовили и отправили на войну</p>
-                <button
-                  class="header-btn-sign w-[100%] h-[70px] font-[Gilroy] text-white font-[600] text-[30px] px-[40px] py-[10px]">
-                  Записаться
-                </button>
+                <span class="text-[52px] text-white  font-[500]">150+</span>
+                <p class="text-[22px] mb-[25px] text-white font-[400]">единиц <br class="nonenone"> оборудования,
+                  жесткие тренировки.</p>
+                <a href="#sign">
+                  <button
+                    class="header-btn-sign w-[100%] h-[70px] font-[Gilroy] text-white font-[600] text-[30px] px-[40px] py-[10px]">
+                    Записаться
+                  </button>
+                </a>
               </div>
               <div class="w-[300px] nums h-[100%]">
-                <span class="text-[52px] text-white  font-[500]">20.000 +</span>
-                <p class="text-[22px] mb-[25px] text-white font-[400]">Бойцов мы подготовили и отправили на войну</p>
-                <button
-                  class="header-btn-call w-[100%] h-[70px] font-[Gilroy] text-white font-[600] text-[30px] px-[40px] py-[10px]">
-                  Позвонить
-                </button>
+                <span class="text-[52px] text-white  font-[500]">30+ </span>
+                <p class="text-[22px] mb-[25px] text-white font-[400]">видов групповых занятий, безжалостная тренировка.
+                </p>
+                <a href="#contact"><button
+                    class="header-btn-call w-[100%] h-[70px] font-[Gilroy] text-white font-[600] text-[30px] px-[40px] py-[10px]">
+                    Позвонить
+                  </button></a>
               </div>
             </div>
           </div>
@@ -71,9 +72,8 @@ import './style.css'
                 class="bg-[red] quotes p-[15px] h-[50px] top-[0%] translate-y-[-50%] shadow-sm absolute rounded-[100%]">
                 <img class="h-[17px]" src="./assets/quotes.png" alt="">
               </div>
-              <span class="text-white font-[Gilroy] text-[22px]">“Сильный не тот кто сильный, сильный тот кто тот
-                сильный, гучи флип флапс”</span>
-              <p class="text-white font-[Gilroy] text-[32px] font-[1000]">BOTIROV DONIYOR</p>
+              <span class="text-white font-[Gilroy] text-[22px]">“Большая сила приходит из больших мучений.”</span>
+              <p class="text-white font-[Gilroy] text-[32px] font-[1000]">Уильям Шекспир</p>
             </div>
           </div>
         </div>
@@ -86,15 +86,17 @@ import './style.css'
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0"
                 stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                  d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
               </svg>
+
             </div>
             <div>
-              <span>Сердце</span>
-              <p>будет как машина биться</p>
+              <span>Занятия</span>
+              <p> Наши групповые </p>
             </div>
           </div>
-          <p class="second_section_block_p">По нашему уникальному методу тренировок станешь машиной !</p>
+          <p class="second_section_block_p"> — это не просто тренировки, это настоящий вызов для твоего тела и духа.
+          </p>
         </div>
         <div class="second_section_block">
           <div class="second_section_block_top">
@@ -119,11 +121,11 @@ import './style.css'
 
             </div>
             <div>
-              <span>Сила</span>
-              <p>ходячий тестостерон</p>
+              <span>Тренеры</span>
+              <p>профессиональные </p>
             </div>
           </div>
-          <p class="second_section_block_p">По нашему уникальному методу тренировок станешь машиной !</p>
+          <p class="second_section_block_p">Наши тренеры — это настоящие гуру фитнеса.</p>
         </div>
         <div class="second_section_block">
           <div class="second_section_block_top">
@@ -135,11 +137,11 @@ import './style.css'
               </svg>
             </div>
             <div>
-              <span>Сердце</span>
-              <p>будет как машина биться</p>
+              <span>Здоровье </span>
+              <p> это наш приоритет</p>
             </div>
           </div>
-          <p class="second_section_block_p">По нашему уникальному методу тренировок станешь машиной !</p>
+          <p class="second_section_block_p">Здоровье и благополучие наших клиентов.</p>
         </div>
 
       </section>
@@ -158,66 +160,19 @@ import './style.css'
           <span>SIGMAGYM</span>
           <img src="./assets/arrows.png" alt="arrows">
           <p>
-            не просто качалка а профессиональный секси фитнес клуб.
+            Стань несокрушимым титаном своей судьбы. Подними железо с SigmaGym!
           </p>
         </div>
       </section>
 
-      <section class="four_screen">
-        <h2>MAKE HEALTHIER <br> CHOICES</h2>
-        <p>Write a paragraph that talks about your business here. Convince your prospective clients to choose you for
-          their fitness needs by talking about your unique product offerings. Write a paragraph that talks about your
-          business here. Convince your prospective clients to choose you for
-          their fitness needs by talking about your unique product offerings.</p>
+      <section id="whowe" class="four_screen">
+        <h2>SigmaGym <br> это не просто <br> "клуб"</h2>
+        <p>— А место где культивируется стальной характер и брутальная сила. Здесь растут настоящие лидеры, готовые к
+          смелым действиям и невероятным достижениям. Мы вдохновляем наших участников становиться лучшей версией себя
+          каждый день, преодолевая любые препятствия на пути к своим целям.</p>
 
         <div class="four_screen_wrapper">
-          <button class="four_screen_wrapper_open" onclick="my_modal_1.showModal()">WORKOUT PLAN</button>
-          <dialog id="my_modal_1" class="modal">
-            <span class="sigmagymdecor">SIGMAGYM</span>
-            <span class="sigmagymdecor">SIGMAGYM</span>
-            <span class="sigmagymdecor">SIGMAGYM</span>
-            <span class="sigmagymdecor">SIGMAGYM</span>
-            <span class="sigmagymdecor">SIGMAGYM</span>
-            <span class="sigmagymdecor">SIGMAGYM</span>
-            <div class="modal-box">
-              <h3 class="font-bold text-lg">WORKOUT PLAN</h3>
-              <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta tempore eum, molestiae
-                provident iste qui excepturi beatae id culpa dolorem. Maxime magnam nisi, ab harum sapiente, quae
-                corporis, excepturi animi repudiandae voluptatem est. Reprehenderit ducimus ipsa architecto nisi
-                mollitia quod debitis voluptatem aperiam, obcaecati deleniti.</p>
-              <div class="modal-action">
-                <form method="dialog">
-                  <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn">Закрыть</button>
-                </form>
-              </div>
-            </div>
-          </dialog>
-
-          <button class="four_screen_wrapper_open" onclick="my_modal_2.showModal()">ALL-YEAR PASS</button>
-          <dialog id="my_modal_2" class="modal">
-            <span class="sigmagymdecor">SIGMAGYM</span>
-            <span class="sigmagymdecor">SIGMAGYM</span>
-            <span class="sigmagymdecor">SIGMAGYM</span>
-            <span class="sigmagymdecor">SIGMAGYM</span>
-            <span class="sigmagymdecor">SIGMAGYM</span>
-            <span class="sigmagymdecor">SIGMAGYM</span>
-            <div class="modal-box">
-              <h3 class="font-bold text-lg">ALL-YEAR PASS</h3>
-              <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta tempore eum, molestiae
-                provident iste qui excepturi beatae id culpa dolorem. Maxime magnam nisi, ab harum sapiente, quae
-                corporis, excepturi animi repudiandae voluptatem est. Reprehenderit ducimus ipsa architecto nisi
-                mollitia quod debitis voluptatem aperiam, obcaecati deleniti.</p>
-              <div class="modal-action">
-                <form method="dialog">
-                  <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn">Закрыть</button>
-                </form>
-              </div>
-            </div>
-          </dialog>
-
-          <button class="four_screen_wrapper_open" onclick="my_modal_3.showModal()">ONE-ON-ONE</button>
+          <button class="four_screen_wrapper_open" onclick="my_modal_3.showModal()">Когда увижу результат ?</button>
           <dialog id="my_modal_3" class="modal">
             <span class="sigmagymdecor">SIGMAGYM</span>
             <span class="sigmagymdecor">SIGMAGYM</span>
@@ -226,77 +181,153 @@ import './style.css'
             <span class="sigmagymdecor">SIGMAGYM</span>
             <span class="sigmagymdecor">SIGMAGYM</span>
             <div class="modal-box">
-              <h3 class="font-bold text-lg">ONE-ON-ONE</h3>
-              <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta tempore eum, molestiae
-                provident iste qui excepturi beatae id culpa dolorem. Maxime magnam nisi, ab harum sapiente, quae
-                corporis, excepturi animi repudiandae voluptatem est. Reprehenderit ducimus ipsa architecto nisi
-                mollitia quod debitis voluptatem aperiam, obcaecati deleniti.</p>
+              <h3 class="font-bold text-lg">Через 2-3 месяца увижу результат?</h3>
+              <p class="py-4">Да, если будешь работать крепко каждый день. Сжигай лень и отвлечения в огне своей
+                страсти. Результаты не приходят к тем, кто ждет, они подчиняются тем, кто действует с безудержным
+                голодом к победе. Тут нет места для слабаков или сомневающихся. Только упорство, дисциплина и
+                бескомпромиссное стремление к превосходству приведут тебя к заветной цели. В SigmaGym мы создаем не
+                просто тела, мы лепим из железа настоящих титанов. Поэтому, бери железо и двигайся вперед – результаты
+                не заставят себя долго ждать!</p>
               <div class="modal-action">
                 <form method="dialog">
                   <!-- if there is a button in form, it will close the modal -->
+                  <button onclick="my_modal_69.showModal()" class="btn mr-[10px]  bg-red-800 text-white border-[1]">Записаться</button>
                   <button class="btn">Закрыть</button>
                 </form>
               </div>
             </div>
           </dialog>
+
+          <button  class="four_screen_wrapper_open" onclick="my_modal_1.showModal()">Совет новичку</button>
+          <dialog id="my_modal_1" class="modal">
+            <span class="sigmagymdecor">SIGMAGYM</span>
+            <span class="sigmagymdecor">SIGMAGYM</span>
+            <span class="sigmagymdecor">SIGMAGYM</span>
+            <span class="sigmagymdecor">SIGMAGYM</span>
+            <span class="sigmagymdecor">SIGMAGYM</span>
+            <span class="sigmagymdecor">SIGMAGYM</span>
+            <div class="modal-box">
+              <h3 class="font-bold text-lg">Совет новичку</h3>
+              <p class="py-4">Самый важный шаг уже сделан — ты решил начать свой путь к здоровью и силе. В SigmaGym мы
+                готовы поддержать тебя на этом пути. Не бойся трудностей, каждый стартует с нуля. Слушай свое тело, учи
+                его язык, иди на встречу силе и энергии. Наши тренеры и программа поддержки помогут тебе разбудить в
+                себе настоящего воина. Помни, что каждая тренировка — это шаг к новой версии тебя. Давай начнем!</p>
+              <div class="modal-action">
+                <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button onclick="my_modal_69.showModal()" class="btn mr-[10px]  bg-red-800 text-white border-[1]">Записаться</button>
+                  <button class="btn">Закрыть</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
+
+          <button class="four_screen_wrapper_open" onclick="my_modal_2.showModal()">Почему именно мы?</button>
+          <dialog id="my_modal_2" class="modal">
+            <span class="sigmagymdecor">SIGMAGYM</span>
+            <span class="sigmagymdecor">SIGMAGYM</span>
+            <span class="sigmagymdecor">SIGMAGYM</span>
+            <span class="sigmagymdecor">SIGMAGYM</span>
+            <span class="sigmagymdecor">SIGMAGYM</span>
+            <span class="sigmagymdecor">SIGMAGYM</span>
+            <div class="modal-box">
+              <h3 class="font-bold text-lg">Почему именно мы?</h3>
+              <p class="py-4">Потому что SigmaGym — это не просто фитнес-клуб, это арена для железных душ, где рождаются
+                настоящие легенды. У нас ты найдешь не только современное оборудование и профессиональных тренеров, но и
+                атмосферу силы, страсти и целеустремленности. Мы не боимся вызовов, мы их принимаем и преодолеваем.
+                Здесь ты станешь частью команды победителей, готовых сокрушать границы и достигать невероятных высот.
+                Присоединяйся к SigmaGym и покажи миру, что ты настоящий титан!"</p>
+              <div class="modal-action">
+                <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button onclick="my_modal_69.showModal()" class="btn mr-[10px]  bg-red-800 text-white border-[1]">Записаться</button>
+                  <button class="btn">Закрыть</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
+
+
         </div>
 
 
       </section>
 
 
-      <section class="five_screen">
+      <section id="advantages" class="five_screen">
         <div class="five_screen_item">
           <h3>
-            КАЧАТЬСЯ <br>
-            СМЕЯТЬСЯ <br>
-            ЕБАТЬСЯ.
+            СИЛА.<br>
+            МОЩЬ. <br>
+            ПОБЕДА.
           </h3>
         </div>
         <div class="five_screen_item five_screen_item2">
           <div>
-            <h4>SLOW AND STEADY.</h4>
-            <p>Write a paragraph that talks about your business here. Convince your prospective clients to choose you
-              for their fitness needs by talking about your unique product offerings. needs by talking about your unique
-              product offerings Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quod consequuntur
-              adipisci ratione distinctio. Praesentium in culpa inventore maxime quasi libero nesciunt ad accusantium
-              repellat similique. Nostrum cum blanditiis distinctio.</p>
+            <h4>Индивид программы.</h4>
+            <p>В SigmaGym мы создаем персонализированные программы тренировок, учитывая твои цели, физическую подготовку
+              и предпочтения. Каждая тренировка - это шаг к достижению твоих максимальных результатов.</p>
           </div>
           <div>
-            <h4>TRAIN LIKE A CHAMP.</h4>
-            <p>Write a paragraph that talks about your business here. Convince your prospective clients to choose you
-              for their fitness needs by talking about your unique product offerings. needs by talking about your unique
-              product offerings Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quod consequuntur
-              adipisci ratione distinctio. Praesentium in culpa inventore maxime quasi libero nesciunt ad accusantium
-              repellat similique. Nostrum cum blanditiis distinctio.</p>
+            <h4>Экспертные тренеры.</h4>
+            <p>Наши тренеры - высококвалифицированные специалисты, готовые вложить свой опыт и знания, чтобы помочь тебе
+              преодолеть любые трудности и достичь фитнес-целей, которые ты задал себе.</p>
           </div>
           <div>
-            <h4>MOUNTAIN THE GAIN.</h4>
-            <p>Write a paragraph that talks about your business here. Convince your prospective clients to choose you
-              for their fitness needs by talking about your unique product offerings. needs by talking about your unique
-              product offerings Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quod consequuntur
-              adipisci ratione distinctio. Praesentium in culpa inventore maxime quasi libero nesciunt ad accusantium
-              repellat similique. Nostrum cum blanditiis distinctio.</p>
+            <h4>Уютная обстановка.</h4>
+            <p>В SigmaGym мы создаем уютную и дружественную атмосферу, где каждый чувствует себя комфортно и
+              вдохновленно. У нас нет места для стресса, только место для твоего развития и успеха в тренировках.</p>
           </div>
         </div>
       </section>
 
-      <section class="six_screen">
+      <section id="sign" class="six_screen">
         <div class="six_screen_item">
-          <h3>ЗАПИШИСЬ НА СВОЙ УСПЕХ SIGMAGYM</h3>
-          <p>Write a paragraph that talks about your business here. Convince your prospective clients to choose you for
-            their fitness.</p>
-          <button>ЗАПИСАТЬСЯ</button>
+          <h3 class="uppercase">Запишись на тренировку уже сегодня!</h3>
+          <p>Не жди завтрашнего дня, чтобы начать свой путь к лучшей версии себя. Присоединяйся к SigmaGym прямо сейчас
+            и начни свой путь к фитнесу, силе и здоровью.</p>
+          <button onclick="my_modal_69.showModal()">ЗАПИСАТЬСЯ</button>
+
         </div>
+        <dialog id="my_modal_69" class="modal bg-[black]">
+          <span class="sigmagymdecor">SIGMAGYM</span>
+          <span class="sigmagymdecor">SIGMAGYM</span>
+          <span class="sigmagymdecor">SIGMAGYM</span>
+          <span class="sigmagymdecor">SIGMAGYM</span>
+          <span class="sigmagymdecor">SIGMAGYM</span>
+          <span class="sigmagymdecor">SIGMAGYM</span>
+          <div class="modal-box">
+            <h3 class="font-bold text-lg">Наша арена ждет твоего громкого рева! Прокачай свою силу и доминирование в
+              SigmaGym!</h3>
+            <div>
+              <div class="mt-2">
+                <input id="name" name="name" type="text" placeholder="Имя" autocomplete="current-password" required
+                  class="block pl-[15px] mt-[15px] font-[Gilroy] font-[800] w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+              </div>
+              <div class="mt-2">
+                <input id="name" name="name" type="text" placeholder="Номер Телефона" autocomplete="current-password" required
+                  class="block pl-[15px] mt-[15px] font-[Gilroy] font-[800] w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn mr-[10px]  bg-red-800 text-white border-[1]">Записаться</button>
+                <button class="btn">Закрыть</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
       </section>
 
 
-      <footer>
+
+      <footer id="contact">
         <h3>ДЕРЖИ НАШИ <br> КОНТАКТЫ.</h3>
         <img src="./assets/footerarrow.png" alt="image">
         <p>РАЙОН ЮНУСАБАД <br>УЛИЦА ДЕТРОИД ДОМ 69</p>
-        <a href="tel:+998915491754">ТЕЛЕФОН: +998915491754</a> <br> <br>
-        <a href="tel:+998915491754">ТЕЛЕФОН: +998915491754</a>
+        <a href="tel:+998974626323">☎️ 97 462 6323</a> <br> <br>
+        <a href="tel:+998977063525">☎️ 97 706 3525</a>
       </footer>
 
     </main>

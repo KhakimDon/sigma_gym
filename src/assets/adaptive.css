@@ -308,7 +308,7 @@
     padding-top: 130px !important;
   }
   .four_screen h2 {
-    font-size: 66px !important;
+    font-size: 55px !important;
     margin-bottom: 30px !important;
     line-height: 66px !important;
   }
@@ -413,4 +413,17 @@
     font-size: 38px !important;
     line-height: 38px !important;
   }
+  .four_screen_wrapper_open{
+    width: 100% !important;
+    font-size: 27px !important;
+    padding: 10px 20px !important;
+  }
+  .nonenone{
+    display: block !important;
+  }
+}
+
+
+.nonenone{
+  display: none;
 }
