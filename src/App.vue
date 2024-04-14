@@ -1,5 +1,42 @@
-<script setup lang="ts">
+<script>
 import './style.css'
+import axios from "axios"
+
+export default {
+  data(){
+    return{
+      username: '',
+      usernumber: '+998',
+    }
+  },
+  methods: {
+    send() {
+      let fullmessage = `Имя клиента: ${this.username} \n
+      
+      Телефон номер: ${this.usernumber}`;
+      // console.log(this.$http);
+      // let a = `https://api.telegram.org/bot${this.token}:AAEti3PIansCHmv1kPY_HSki4Q8wq2PJa5c/sendMessage?chat_id=${this.chatId}&text=${fullmessage}`;
+
+      let api = `https://api.telegram.org/bot6779827682:AAHn49qs8hwRRxlr9fdfmdepNFIlIwN8Ix8/sendMessage?chat_id=-4133301982&text=${fullmessage}`
+
+
+      axios.get(api).then(
+        (response) => {
+          console.log("Succsessfully!", response.data);
+          this.response = true
+          this.username = ''
+          this.usernumber = ''
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+    }
+  }
+}
+
+
+
 </script>
 
 <template>
@@ -191,14 +228,15 @@ import './style.css'
               <div class="modal-action">
                 <form method="dialog">
                   <!-- if there is a button in form, it will close the modal -->
-                  <button onclick="my_modal_69.showModal()" class="btn mr-[10px]  bg-red-800 text-white border-[1]">Записаться</button>
+                  <button onclick="my_modal_69.showModal()"
+                    class="btn mr-[10px]  bg-red-800 text-white border-[1]">Записаться</button>
                   <button class="btn">Закрыть</button>
                 </form>
               </div>
             </div>
           </dialog>
 
-          <button  class="four_screen_wrapper_open" onclick="my_modal_1.showModal()">Совет новичку</button>
+          <button class="four_screen_wrapper_open" onclick="my_modal_1.showModal()">Совет новичку</button>
           <dialog id="my_modal_1" class="modal">
             <span class="sigmagymdecor">SIGMAGYM</span>
             <span class="sigmagymdecor">SIGMAGYM</span>
@@ -215,7 +253,8 @@ import './style.css'
               <div class="modal-action">
                 <form method="dialog">
                   <!-- if there is a button in form, it will close the modal -->
-                  <button onclick="my_modal_69.showModal()" class="btn mr-[10px]  bg-red-800 text-white border-[1]">Записаться</button>
+                  <button onclick="my_modal_69.showModal()"
+                    class="btn mr-[10px]  bg-red-800 text-white border-[1]">Записаться</button>
                   <button class="btn">Закрыть</button>
                 </form>
               </div>
@@ -240,7 +279,8 @@ import './style.css'
               <div class="modal-action">
                 <form method="dialog">
                   <!-- if there is a button in form, it will close the modal -->
-                  <button onclick="my_modal_69.showModal()" class="btn mr-[10px]  bg-red-800 text-white border-[1]">Записаться</button>
+                  <button onclick="my_modal_69.showModal()"
+                    class="btn mr-[10px]  bg-red-800 text-white border-[1]">Записаться</button>
                   <button class="btn">Закрыть</button>
                 </form>
               </div>
@@ -301,18 +341,19 @@ import './style.css'
               SigmaGym!</h3>
             <div>
               <div class="mt-2">
-                <input id="name" name="name" type="text" placeholder="Имя" autocomplete="current-password" required
+                <input id="name" v-model="username" name="name" type="text" placeholder="Имя" autocomplete="current-password" required
                   class="block pl-[15px] mt-[15px] font-[Gilroy] font-[800] w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
               </div>
               <div class="mt-2">
-                <input id="name" name="name" type="text" placeholder="Номер Телефона" autocomplete="current-password" required
+                <input v-model="usernumber" type="text" placeholder="Номер Телефона" autocomplete="current-password"
+                  required
                   class="block pl-[15px] mt-[15px] font-[Gilroy] font-[800] w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
               </div>
             </div>
             <div class="modal-action">
               <form method="dialog">
                 <!-- if there is a button in form, it will close the modal -->
-                <button class="btn mr-[10px]  bg-red-800 text-white border-[1]">Записаться</button>
+                <button @click="send()" class="btn mr-[10px]  bg-red-800 text-white border-[1]">Записаться</button>
                 <button class="btn">Закрыть</button>
               </form>
             </div>
@@ -325,9 +366,13 @@ import './style.css'
       <footer id="contact">
         <h3>ДЕРЖИ НАШИ <br> КОНТАКТЫ.</h3>
         <img src="./assets/footerarrow.png" alt="image">
-        <p>РАЙОН ЮНУСАБАД <br>УЛИЦА ДЕТРОИД ДОМ 69</p>
-        <a href="tel:+998974626323">☎️ 97 462 6323</a> <br> <br>
-        <a href="tel:+998977063525">☎️ 97 706 3525</a>
+        <p>
+          Юнусабад 6кв (конечка автобусов)
+          <br>
+          Кибрай, улица Гулистон 8-открытая дом 1А
+        </p>
+        <a href="tel:+998974626323">☎️ 97 462 63 23</a> <br> <br>
+        <a href="tel:+9989770023525">☎️ 77 002 35 25</a>
       </footer>
 
     </main>
