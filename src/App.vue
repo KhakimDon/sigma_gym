@@ -366,10 +366,11 @@ export default {
       <footer id="contact">
         <h3>ДЕРЖИ НАШИ <br> КОНТАКТЫ.</h3>
         <img src="./assets/footerarrow.png" alt="image">
-        <p>
-          Юнусабад 6кв (конечка автобусов)
-          <br>
-          Кибрай, улица Гулистон 8-открытая дом 1А
+        <p class="w-[max-content]px-[15px] ledled leading-[33px] py-[5px]">
+          <span class="text-white block nije">Филиал №1 :</span> <br> <span class="text-black bg-white">Юнусабад 6кв (конечка автобусов)</span>
+        </p>
+        <p class="w-[max-content]px-[15px] ledled leading-[33px] py-[5px]">
+          <span class="text-white block nije"> Филиал №2 :</span> <br> <span class="text-black bg-white"> Кибрай, улица Гулистон 8-открытая дом 1А</span>
         </p>
         <a href="tel:+998974626323">☎️ 97 462 63 23</a> <br> <br>
         <a href="tel:+9989770023525">☎️ 77 002 35 25</a>

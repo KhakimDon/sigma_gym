@@ -421,6 +421,13 @@
   .nonenone{
     display: block !important;
   }
+
+  .ledled{
+    line-height: 40px !important;
+  }
+  .nije{
+    transform: translateY(30px);
+  }
 }
 
 
